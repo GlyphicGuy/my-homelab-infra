@@ -1,0 +1,16 @@
+
+# Exclude environment files with passwords
+.env
+*.env
+secrets/
+
+# Exclude temporary files
+*.tmp
+*.log
+
+# Exclude IDE files
+.vscode/
+.idea/
+
+# Keep the structure but not sensitive data
+configs/system/ # Keep directory but add sensitive files to gitignore
