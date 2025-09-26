@@ -61,3 +61,5 @@ ND_BASEURL=/ - Base URL for reverse proxy
 - **Library size:** 31
 
 - **Uptime:** 95% (since Sep 2025)
+---
+_Part of my [homelab project](../README.md)._

@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  jellyfin:
+    image: jellyfin/jellyfin:latest
+    container_name: jellyfin
+    ports:
+      - "8096:8096"
+    volumes:
+      - /docker/jellyfin/config:/config
+      - /docker/jellyfin/cache:/cache
+      - /srv/media/movies:/media/movies:ro
+      - /srv/media/tv:/media/tv:ro
+    devices:
+      - /dev/dri:/dev/dri  # Hardware transcoding
+    restart: unless-stopped
