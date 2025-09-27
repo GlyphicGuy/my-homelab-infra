@@ -79,7 +79,7 @@ graph TB
 <br>
 <br>
 
->For detailed architecture diagrams, network flows, and service dependencies, see the [architecture documentation](./architecture/networkFlowDiagram.md).
+>For detailed architecture diagrams, network flows, and service dependencies, see the [architecture documentation](./architecture/README.md).
 
 
 ### Key Architectural Decisions

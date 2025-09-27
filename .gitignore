@@ -13,4 +13,4 @@ secrets/
 .idea/
 
 # Keep the structure but not sensitive data
-configs/system/ # Keep directory but add sensitive files to gitignore
+configs/system/
