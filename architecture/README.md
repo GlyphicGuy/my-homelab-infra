@@ -7,7 +7,7 @@ config:
   theme: neo-dark
   look: neo
 ---
-flowchart TB
+graph TB
  subgraph MEDIA["🎥 Media Pipeline"]
     direction TB
         MeTube("MeTube 📥")
