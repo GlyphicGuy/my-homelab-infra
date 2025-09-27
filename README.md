@@ -44,17 +44,42 @@ A modular, containerized architecture running on repurposed hardware, designed f
 
 **Core Technology Stack:**
 - **Containerization**: Docker + Docker Compose
-- **Orchestration**: Portainer for container management
+- **Orchestration**: Portainer for container management and Cockpit for server overview and access
 - **Networking**: Tailscale for secure remote access
 - **Reverse Proxy**: Nginx Proxy Manager for service routing
 
-### Architecture Philosophy
-| User Need | Specialized Service | Expanded Ecosystem |
-|-----------|---------------------|-------------------|
-| **Music**  | Navidrome | Media Automation Suite |
-| **Videos** | Jellyfin | Cloud Services |
-| **Files** | Nextcloud | Management Tools |
-| **Access** | Tailscale | Secure Infrastructure |
+
+## 🏗️ Technical Architecture
+```mermaid
+graph TB
+    %% Inputs
+    User[👤 User]
+    Internet[🌐 Internet]
+    
+    %% Network Access
+    Tailscale[🔒 Tailscale VPN]
+    
+    %% Core Services
+    Media[🎵 Media Services<br/>Navidrome + Jellyfin]
+    Automation[🤖 Automation<br/>Arr Stack + MeTube]
+    Cloud[☁️ Cloud<br/>Nextcloud]
+    Management[🛠️ Management<br/>Portainer + Cockpit]
+    
+    %% Correct Connections
+    User --> Tailscale
+    Internet --> Tailscale
+    Tailscale --> Media
+    Tailscale --> Automation  
+    Tailscale --> Cloud
+    Tailscale --> Management
+    
+    Internet <--> Automation
+    Automation --> Media
+```
+<br>
+<br>
+
+>For detailed architecture diagrams, network flows, and service dependencies, see the [architecture documentation](./architecture/networkFlowDiagram.md).
 
 
 ### Key Architectural Decisions
@@ -63,24 +88,7 @@ A modular, containerized architecture running on repurposed hardware, designed f
 3. **Secure-by-Default**: VPN-only remote access, service authentication
 4. **Automation-Focused**: Media acquisition fully automated via Arr stack
 
-### Service Relationships
 
-Internet\
-│\
-├── Tailscale VPN\
-│\
-└── Debian Server\
-├── Docker Engine\
-│ ├── Media Stack (Navidrome, Jellyfin, Arr suite)\
-│ ├── Cloud Services (Nextcloud, File sync)\
-│ └── Management (Portainer, Cockpit, NPM)\
-└── Storage Volumes\
-├── Media Library (Movies, Music, TV)\
-├── Application Data (Databases, Configs)\
-└── User Files (Nextcloud, Backups)
-
-
-For detailed architecture diagrams, network flows, and service dependencies, see the [architecture documentation](./architecture/).
 
 
 ## 📈 The Journey

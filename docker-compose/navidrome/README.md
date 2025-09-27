@@ -13,9 +13,13 @@ Navidrome provides a modern music streaming server that replaces commercial serv
 - **Multi-user support** with separate libraries and preferences
 - **Transcoding on the fly** for format compatibility
 
-## 🏗️ Architecture
-```
-Coming soon
+## 🖧 Service Flow
+```mermaid
+graph LR
+    A[🎵 Find Music<br/>YouTube/YT Music] --> B[📥 MeTube Download]
+    B --> C[💾 Save to<br/>/srv/music/]
+    C --> D[🔄 Navidrome<br/>Auto-scans]
+    D --> E[🎶 Stream Anywhere]
 ```
 ## 📁 Directory Structure
 ![alt text](image.png)

@@ -18,8 +18,17 @@ Automatically finds, downloads, and organizes movies and TV shows, feeding conte
 4. **Radarr** - Movie automation
 5. **Configure integrations** between all services
 
-## 🔄 Workflow
-graph coming soon
+## 🖧 Workflow
+```mermaid
+graph LR
+    A[🎬 Add Movie/TV Show] --> B[🤖 Sonarr/Radarr]
+    B --> C[🔍 Prowlarr Search]
+    C --> D[📥 qBittorrent Download]
+    D --> E[📁 Auto-organize<br/>/srv/media/]
+    E --> F[🎪 Jellyfin<br/>Auto-updates]
+    F --> G[📺 Watch Instantly]
+```
+
 
 
 ## ⚙️ Integration Points
