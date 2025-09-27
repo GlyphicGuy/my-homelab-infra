@@ -99,3 +99,5 @@ graph TB
     linkStyle 5 stroke:#1cb567,stroke-width:2.5px,fill:none
     linkStyle 6 stroke:#1cb567,stroke-width:2.5px,fill:none
 ```
+
+![diagram](./networkArchitecture.png)
