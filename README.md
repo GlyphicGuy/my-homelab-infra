@@ -124,42 +124,6 @@ graph TB
 - [ ] Monitoring (Grafana, Prometheus)
 - [ ] Development environments
 
-## 📁 Project Structure
-my-homelab/\
-├── README.md\
-├── architecture/\
-│   ├── diagram.md\
-│   └── network-flow.md\
-├── docker-compose/\
-│   ├── navidrome/\
-│   ├── jellyfin/&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;# 🆕 Your movie server\
-│   ├── nextcloud/\
-│   ├── metube/\
-│   ├── qbittorrent/&emsp;&emsp;&emsp;&emsp;# 🆕 Torrent client\
-│   ├── prowlarr/&emsp;&emsp;&emsp;&emsp;&emsp; # 🆕 Indexer manager\
-│   ├── sonarr/&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; # 🆕 TV shows automation\
-│   ├── radarr/&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; # 🆕 Movies automation\
-│   ├── portainer/&emsp; &emsp; &emsp; &emsp;  # 🆕 Docker management GUI\
-│   ├── cockpit/&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;# 🆕 Server management GUI\
-│   └── tailscale/&emsp;&emsp;&emsp;&emsp; &emsp; # 🆕 VPN\
-├── scripts/\
-│   ├── full-deploy.sh&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; # 🆕 Deploy ALL services\
-│   ├── media-stack-deploy.sh&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; # 🆕 Just media services\
-│   ├── backup.sh\
-│   └── update.sh\
-├── docs/\
-│   ├── setup-guide.md\
-│   ├── media-stack.md&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; # 🆕 How Jellyfin+Sonarr+Radarr work together\
-│   ├── security.md&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; # 🆕 Auth, VPN, etc.\
-│   └── troubleshooting.md\
-└── configs/\
-    ├── nginx/&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; # 🆕 NPM configs if you want to document\
-    └── system/&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; # 🆕 Server-level configs
-
-
-## 🚀 Getting Started
-
-See [docs/setup-guide.md](docs/setup-guide.md) for detailed installation instructions.
 
 ## 💡 Lessons Learned
 
@@ -169,6 +133,7 @@ This project demonstrates how solving one specific pain point can lead to master
 - Network security and VPNs
 - Service integration and automation
 - Infrastructure-as-code principles
+- Every bug can be fixed!
 
 ---
 
