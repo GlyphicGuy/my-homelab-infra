@@ -9,6 +9,8 @@ Automated movie management - finds, downloads, and organizes films.
 - **Web UI**: http://myserver:7878
 - **Default credentials**: None (set on first access)
 
+![Radarr](../screenshots/radarrhome.png)
+
 ## Integration
 - **Source**: Prowlarr indexers
 - **Download**: qBittorrent client

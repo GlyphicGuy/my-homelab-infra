@@ -8,6 +8,8 @@ docker-compose up -d
 ```
 **Access**: http://myserver:8096
 
+![Jellyfin](../screenshots/jellyfinhome.png)
+
 ## My Setup
 - **Library**: `/srv/media/movies` and `/srv/media/tv`
 - **Hardware Transcoding**: Enabled (Intel i3 4th Gen Quick Sync)

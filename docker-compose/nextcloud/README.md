@@ -8,6 +8,8 @@ docker-compose up -d
 ```
 **Access:** http://myserver:8080
 
+![NextCloud](../screenshots/nextcloudhome.png)
+
 ## My Setup
 - **Storage**: `/srv/cloud` (mounted to Nextcloud data directory)
 - **Database**: MySQL for compatibility and performance

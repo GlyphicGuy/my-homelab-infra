@@ -7,7 +7,11 @@ Torrent download client with web interface.
 
 ## Access
 - **Web UI**: http://myserver:8080
-- **Default credentials**: admin / adminadmin
+- **Default credentials**: check the logs or config file to find it as it's randomly generated
+
+![qBittorrent](../screenshots/qbittorrenthome.jpg)
+
+
 
 ## Integration
 - **Sources**: Sonarr, Radarr (via Prowlarr)

@@ -5,6 +5,8 @@
 ## 🎯 Purpose
 Navidrome provides a modern music streaming server that replaces commercial services like YouTube Music and Spotify. Born from the need to avoid ads and background play restrictions, it now serves as the cornerstone of my homelab's media ecosystem.
 
+![Navidrome](../screenshots/navidromehome.png)
+
 ## ✨ Features
 - **Web-based music player** with modern UI
 - **Mobile app support** (Substreamer, Play:Sub, etc.)

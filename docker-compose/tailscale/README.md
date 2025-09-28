@@ -11,6 +11,8 @@ sudo tailscale up
 # On client devices: Install Tailscale app and login
 ```
 
+![Tailscale](../screenshots/tailscalehome.jpg)
+
 ## Features
 - Secure remote access from anywhere
 - No port forwarding required

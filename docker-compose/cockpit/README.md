@@ -8,6 +8,8 @@ docker-compose up -d
 ```
 **Access:** https://myserver:9090
 
+![Cockpit](../screenshots/cockpithome.jpg)
+
 ## Features
 - System performance monitoring
 - Service management

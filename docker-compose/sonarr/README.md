@@ -9,6 +9,8 @@ Automated TV show management - finds, downloads, and organizes episodes.
 - **Web UI**: http://myserver:8989
 - **Default credentials**: None (set on first access)
 
+![Sonarr](../screenshots/sonarrhome.png)
+
 ## Integration
 - **Source**: Prowlarr indexers
 - **Download**: qBittorrent client  

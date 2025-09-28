@@ -8,6 +8,8 @@ docker-compose up -d
 ```
 **Access:** https://myserver:9443
 
+![Portainer](../screenshots/portainerdashboard.jpg)
+
 ## Features
 - Container status monitoring
 - Log viewing
