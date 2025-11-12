@@ -1,1 +1,4 @@
-fastMCP
+fastmcp
+docker
+psutil
+arrapi

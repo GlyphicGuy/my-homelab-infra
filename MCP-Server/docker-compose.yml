@@ -1,0 +1,22 @@
+version: '3.8'
+
+services:
+  server-mcp:
+    # This tells compose to build the Dockerfile in the current directory
+    build: .
+    container_name: my-server-mcp
+    restart: unless-stopped
+    ports:
+      # Exposes port 5000 on your server, which Tailscale can then see
+      - "5000:5000"
+    volumes:
+      # This gives the container root-level access to your host's Docker daemon
+      - /var/run/docker.sock:/var/run/docker.sock
+    environment:
+      - RADARR_URL=http://host.docker.internal:<port>
+      - RADARR_API_KEY=<radarr-api-key>
+      - SONARR_URL=http://host.docker.internal:<port>
+      - SONARR_API_KEY=<sonarr-api-key>
+    extra_hosts:
+    #helps to connect to other containers on the same host
+      - "host.docker.internal:host-gateway"

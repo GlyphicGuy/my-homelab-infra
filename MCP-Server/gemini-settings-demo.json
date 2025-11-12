@@ -1,0 +1,10 @@
+{
+  "theme": "Default",
+  "selectedAuthType": "oauth-personal",
+  "mcpServers": {
+    "MY_DEBIAN_SERVER": {
+      "httpUrl": "http://tailscale-ip:5000/mcp",
+      "timeout": 30000 
+    }
+  }
+}
