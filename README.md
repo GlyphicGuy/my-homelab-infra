@@ -89,8 +89,6 @@ graph TB
 4. **Automation-Focused**: Media acquisition fully automated via Arr stack
 
 
-
-
 ## 📈 The Journey
 
 ### Phase 1: Music Freedom
@@ -119,6 +117,7 @@ graph TB
 
 ## 🚧 Future Expansions
 
+- [ ] Network wide Ad Blocker(Pi hole)
 - [ ] Home automation (Tweaking with Alexa)
 - [ ] Password manager (Vaultwarden)
 - [ ] Monitoring (Grafana, Prometheus)
