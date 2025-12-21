@@ -117,11 +117,11 @@ graph TB
 
 ## 🚧 Future Expansions
 
-- [ ] Network wide Ad Blocker(Pi hole)
+- [X] Network wide Ad Blocker(Pi hole)
 - [ ] Home automation (Tweaking with Alexa)
-- [ ] Password manager (Vaultwarden)
 - [ ] Monitoring (Grafana, Prometheus)
 - [ ] Development environments
+- [ ] Kubernetes
 
 
 ## 💡 Lessons Learned
