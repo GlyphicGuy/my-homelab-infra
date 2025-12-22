@@ -1,0 +1,16 @@
+services:
+  pihole:
+    container_name: pihole
+    image: pihole/pihole:latest
+    ports:
+      - "53:53/tcp"
+      - "53:53/udp"
+      - "8081:80/tcp"  # Changed to 8081 to avoid conflicts
+      - "443:443/tcp" # For HTTPS support
+    environment:
+      TZ: 'Asia/Kolkata' # Change this to your city/timezone
+      FTLCONF_webserver_api_password: '_password_here_'
+      FTLCONF_dns_listeningMode: 'ALL'
+    volumes:
+      - './etc-pihole:/etc/pihole'
+    restart: unless-stopped

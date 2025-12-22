@@ -1,0 +1,13 @@
+
+# Add this to services section of the media automation docker-compose.yml [./arr-stack/docker-compose.yml]
+jellyseerr:
+    image: fallenbagel/jellyseerr:latest
+    container_name: jellyseerr
+    environment:
+      - LOG_LEVEL=debug
+      - TZ=Asia/Kolkata
+    volumes:
+      - /srv/media/config/jellyseerr:/app/config
+    ports:
+      - "5055:5055"
+    restart: unless-stopped
