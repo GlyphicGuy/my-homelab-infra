@@ -47,4 +47,4 @@ See docker-compose.yml for volume mounts and network settings.
 - **Network**: Internal Docker network + host access via `host.docker.internal`
 
 ---
-_Part of my homelab project._
+_Part of my homelab project_
