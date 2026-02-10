@@ -42,7 +42,6 @@ See docker-compose.yml for volume mounts and network settings.
 
 ## Access & Security
 - **First-time setup**: Create admin account on initial access
-- **Credentials**: Stored encrypted using `N8N_ENCRYPTION_KEY`
 - **Webhooks**: Use authentication for external triggers
 - **Network**: Internal Docker network + host access via `host.docker.internal`
 
